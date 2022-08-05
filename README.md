@@ -87,5 +87,5 @@ python3 bbox_video.py "/home/result_images/" "/home/video.avi"
 [ros2_tao_pointpillars](https://github.com/NVIDIA-AI-IOT/ros2_tao_pointpillars): ROS2 node for 3D object detection in point clouds using TAO-PointPillars.
 
 ## Support
-Please reach out regarding issues and suggestions here.
+Please reach out regarding issues and suggestions [here](https://github.com/NVIDIA-AI-IOT/viz_3Dbbox_ros2_pointpillars/issues).
 
