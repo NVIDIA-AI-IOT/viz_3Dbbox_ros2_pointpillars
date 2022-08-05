@@ -1,14 +1,14 @@
 # Visualization tool for 3D bounding box results of ROS2 TAO-PointPillars
 
-This project contains a ROS2 node that converts [PointCloud2](https://docs.ros2.org/foxy/api/sensor_msgs/msg/PointCloud2.html) messages to bin files in KITTI format. The project also includes a workflow and scripts to visualize output of 3D object detection using [TAO-PointPillars](https://tlt.gitlab-master-pages.nvidia.com/tlt-docs/text/point_cloud/pointpillars.html). This workflow generates a video of resulting bounding boxes superimposed on input point clouds.
+This project contains a ROS2 node that converts [PointCloud2](https://docs.ros2.org/foxy/api/sensor_msgs/msg/PointCloud2.html) messages to bin files in KITTI format. The project also includes a workflow and scripts to visualize output of 3D object detection using [TAO-PointPillars](https://catalog.ngc.nvidia.com/orgs/nvidia/teams/tao/models/pointpillarnet). This workflow generates a video of resulting bounding boxes superimposed on input point clouds.
 
 <p align="center" width="100%">
-<img src="images/visualization_workflow.PNG"  height="50%" width="50%">
+<img src="images/visualization_workflow.PNG"  height="75%" width="75%">
 </p>
 
 Files in this repository:
 
-1. `to_bin` - ROS2 node to convert PointCloud2 messages to bin files. If you have bin files for your data already, please skip to step 2 below. This node subscribes to PointCloud2 messages from a real or simulated lidar on the `/point_cloud` topic, and creates a bin file for each point cloud. To read data from a generated bin file (say, pointcloud1.bin):
+1. `to_bin` - ROS2 node to convert PointCloud2 messages to bin files. If you already have bin files for your data, please skip to step 2 below. This node subscribes to PointCloud2 messages from a real or simulated lidar on the `/point_cloud` topic, and creates a bin file for each point cloud. To read data from a generated bin file (say, pointcloud1.bin):
 ```
 import numpy as np
 pc = np.fromfile("pointcloud1.bin", dtype=np.float32).reshape((-1, 4))
@@ -84,5 +84,8 @@ python3 bbox_video.py "/home/result_images/" "/home/video.avi"
 </p>
 
 ## Related projects
-[ros2_tao_pointpillars](https://gitlab-master.nvidia.com/asawareeb/ros2-tao-pointpillars): ROS2 node for 3D object detection in point clouds using TAO-PointPillars.
+[ros2_tao_pointpillars](https://github.com/NVIDIA-AI-IOT/ros2_tao_pointpillars): ROS2 node for 3D object detection in point clouds using TAO-PointPillars.
+
+## Support
+Please reach out regarding issues and suggestions here.
 
