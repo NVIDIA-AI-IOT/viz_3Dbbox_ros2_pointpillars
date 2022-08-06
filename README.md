@@ -23,7 +23,7 @@ ros2 run to_bin convert_to_bin --ros-args -p output_path:="/home/bin_files/" -p 
 
 The argument `intensity_range` is a float value specifying the scale factor for dividing intensity. For example, if your model is trained on data where point intensity is in the range [0.0 - 1.0] and input data at inference has intensity in the range [1 - 255], this parameter should be set to 255.0 so that input data matches training data.
 
-2. `run_all_pcs.py` - Runs PointPillars inference for all bin files in a folder. Please follow the steps given [here](https://catalog.ngc.nvidia.com/orgs/nvidia/teams/tao/models/pointpillarnet) to build and use the TAO-PointPillars model.
+2. `run_all_pcs.py` - Runs PointPillars inference for all bin files in a folder. Please follow the steps given [here](https://github.com/NVIDIA-AI-IOT/tao_toolkit_recipes/tree/main/tao_pointpillars/tensorrt_sample) to build and use the TAO-PointPillars model.
 
 Replace `test/main.cpp` from the `pointpillar-tensorrt-inference-sample` repo with `main.cpp` from this repo to generate and save results in a text file for each input bin file. Create a folder to save output text files. Re-build the project, copy `run_all_pcs.py` from the repo to the `build` folder and run:
 ```
