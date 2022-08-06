@@ -25,7 +25,7 @@ The argument `intensity_range` is a float value specifying the scale factor for 
 
 2. `run_all_pcs.py` - Runs PointPillars inference for all bin files in a folder. Please follow the steps given [here](https://github.com/NVIDIA-AI-IOT/tao_toolkit_recipes/tree/main/tao_pointpillars/tensorrt_sample) to build and use the TAO-PointPillars model.
 
-Replace `test/main.cpp` from the `pointpillar-tensorrt-inference-sample` repo with `main.cpp` from this repo to generate and save results in a text file for each input bin file. Create a folder to save output text files. Re-build the project, copy `run_all_pcs.py` from the repo to the `build` folder and run:
+Replace `test/main.cpp` from the [tensorrt_sample](https://github.com/NVIDIA-AI-IOT/tao_toolkit_recipes/tree/main/tao_pointpillars/tensorrt_sample) repo with `main.cpp` from this repo to generate and save results in a text file for each input bin file. Create a folder to save output text files. Re-build the project, copy `run_all_pcs.py` from the repo to the `build` folder and run:
 ```
 mkdir build && cd build
 cmake .. -DCUDA_VERSION=<CUDA_VERSION>
