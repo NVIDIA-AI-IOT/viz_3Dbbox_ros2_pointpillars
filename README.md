@@ -74,10 +74,6 @@ python3 bbox_video.py <absolute-path-to-images-folder> <absolute-path-to-save-ou
 python3 bbox_video.py "/home/result_images/" "/home/video.avi"
 ```
 
-<p align="middle">
-<img src="images/pc_gif.gif"  height="55%" width="55%">
-<img src="images/bbox_gif.gif"  height="40%" width="40%">
-</p>
 
 <p align="center" width="100%">
 <img src="images/feature_gif.gif"  height="75%" width="75%">
