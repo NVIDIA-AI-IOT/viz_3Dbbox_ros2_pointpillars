@@ -1,6 +1,6 @@
 # Visualization tool for 3D bounding box results of ROS2 TAO-PointPillars
 
-This project contains a ROS2 node that converts [PointCloud2](https://docs.ros2.org/foxy/api/sensor_msgs/msg/PointCloud2.html) messages to bin files in KITTI format. The project also includes a workflow and scripts to visualize output of 3D object detection using [TAO-PointPillars](https://catalog.ngc.nvidia.com/orgs/nvidia/teams/tao/models/pointpillarnet). This workflow generates a video of resulting bounding boxes superimposed on input point clouds.
+This project contains a ROS2 node that converts [PointCloud2](https://docs.ros2.org/foxy/api/sensor_msgs/msg/PointCloud2.html) messages to bin files in KITTI format. The project also includes a workflow and scripts to visualize output of 3D object detection in point clouds using [TAO-PointPillars](https://catalog.ngc.nvidia.com/orgs/nvidia/teams/tao/models/pointpillarnet). This workflow generates a video of resulting bounding boxes superimposed on input point clouds.
 
 <p align="center" width="100%">
 <img src="images/visualization_workflow.PNG"  height="75%" width="75%">
